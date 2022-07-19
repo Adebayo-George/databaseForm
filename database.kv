@@ -1,0 +1,35 @@
+<TextInput>
+    font_size: 15
+    size_hint: (1, None)
+    height: 50
+
+<MyLayout>
+    first_name: first_name
+    last_name: last_name
+    email: email
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 10
+        spacing: 10
+
+        TextInput:
+            id: first_name
+            multiline: False
+            text: "First Name"
+
+        TextInput:
+            id: last_name
+            multiline: False
+            text: "Last Name"
+
+        TextInput:
+            id: email
+            multiline: False
+            text: "Email"
+
+        Button:
+            text: "submit"
+            font_size: 32
+            on_press: root.submit()
