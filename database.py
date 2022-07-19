@@ -61,3 +61,4 @@ class DbFormApp(App):
 
 if __name__ == "__main__":
     DbFormApp().run()
+
